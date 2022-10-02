@@ -1,0 +1,175 @@
+<!-- meta tags and other links -->
+@@include('../partial-html/_template-top.html')
+<!-- Header Section -->
+<div class="responsive-header d-flex justify-content-between align-items-center bg-white d-lg-none shadow-none border-0 mb-0">
+    <div class="header-trigger"><img src="assets/images/icon/toggler.png" alt="trigger" class="mw-100"></div>
+    <h4 class="page-title">Album</h4>
+    <span class="search-trigger"></span>
+</div>
+<!-- Header Section -->
+
+
+<div class="main-wrapper d-flex flex-wrap">
+
+    @@include('../partial-html/_sidebar.html')
+
+    <div class="body-content">
+        <div class="top-area">
+            <div class="search-box d-flex flex-wrap align-items-center">
+                <h3 class="title d-none d-lg-block">Album</h3>
+            </div>
+            <div class="flex-wrap justify-content-end align-items-center mb-5 gap-4  d-none d-lg-flex">
+                <a href="javascript:void(0)" class="cmn--btn px-4 text-center modalToggle" data-bs-target="#shareModalTwo" data-bs-toggle="modal">Share</a>
+                <select class="form-select form--control ps-4 pe-5 w-auto" id="photoVideo">
+                    <option value="photos">Photos</option>
+                    <option value="videos">Videos</option>
+                </select>
+            </div>
+            <ul class="nav-tabs nav justify-content-center mb-30 cmn--tabs d-lg-none">
+                <li><a href="#photos" data-bs-toggle="tab" class="active">Photos</a></li>
+                <li><a href="#videos" data-bs-toggle="tab">Videos</a></li>
+            </ul>
+        </div>
+        <div class="tab-content">
+            <div class="tab-pane fade  show active" id="photos">
+                <div class="gallery-wrapper row gy-xxl-5 g-3 g-md-4">
+                    <div class="col-lg-6 col-xl-4 col-6">
+                        <div class="gallery-item position-relative">
+                            <img src="assets/images/thumb/gallery1.png" alt="thumb">
+                            <button type="button" class="modalTransparentBtn" data-bs-toggle="modal" data-bs-target="#galleryModal"></button>
+                            <!-- Button trigger modal -->
+                            <input type="checkbox" class="position-absolute d-lg-none" style="right: 9px; bottom: 11px" id="check01">
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-xl-4 col-6">
+                        <div class="gallery-item">
+                            <img src="assets/images/thumb/gallery2.png" alt="thumb">
+                            <!-- Button trigger modal -->
+                            <button type="button" class="modalTransparentBtn" data-bs-toggle="modal" data-bs-target="#galleryModal"></button>
+                            <!-- Button trigger modal -->
+                            <input type="checkbox" class="position-absolute d-lg-none" style="right: 9px; bottom: 11px" id="check01">
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-xl-4 col-6">
+                        <div class="gallery-item">
+                            <img src="assets/images/thumb/gallery3.png" alt="thumb">
+                            <!-- Button trigger modal -->
+                            <button type="button" class="modalTransparentBtn" data-bs-toggle="modal" data-bs-target="#galleryModal"></button>
+                            <!-- Button trigger modal -->
+                            <input type="checkbox" class="position-absolute d-lg-none" style="right: 9px; bottom: 11px" id="check01">
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-xl-4 col-6">
+                        <div class="gallery-item">
+                            <img src="assets/images/thumb/gallery4.png" alt="thumb">
+                            <!-- Button trigger modal -->
+                            <button type="button" class="modalTransparentBtn" data-bs-toggle="modal" data-bs-target="#galleryModal"></button>
+                            <!-- Button trigger modal -->
+                            <input type="checkbox" class="position-absolute d-lg-none" style="right: 9px; bottom: 11px" id="check01">
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-xl-4 col-6">
+                        <div class="gallery-item">
+                            <img src="assets/images/thumb/gallery5.png" alt="thumb">
+                            <!-- Button trigger modal -->
+                            <button type="button" class="modalTransparentBtn" data-bs-toggle="modal" data-bs-target="#galleryModal"></button>
+                            <!-- Button trigger modal -->
+                            <input type="checkbox" class="position-absolute d-lg-none" style="right: 9px; bottom: 11px" id="check01">
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-xl-4 col-6">
+                        <div class="gallery-item">
+                            <img src="assets/images/thumb/gallery6.png" alt="thumb">
+                            <!-- Button trigger modal -->
+                            <button type="button" class="modalTransparentBtn" data-bs-toggle="modal" data-bs-target="#galleryModal"></button>
+                            <!-- Button trigger modal -->
+                            <input type="checkbox" class="position-absolute d-lg-none" style="right: 9px; bottom: 11px" id="check01">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="videos">
+                <div class="gallery-wrapper row gy-xxl-5 g-3 g-md-4">
+                    <div class="col-lg-6 col-xl-4 col-6">
+                        <div class="gallery-item video-item">
+                            <img src="assets/images/thumb/video1.png" alt="thumb">
+                            <a href="#0" class="create-video text-center">
+                                <span class="video-icon"><i class="fas fa-video"></i></span>
+                                <span class="text">Create Zoom Video</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-xl-4 col-6">
+                        <div class="gallery-item video-item">
+                            <img src="assets/images/thumb/video1.png" alt="thumb">
+                            <a href="#0" class="create-video text-center">
+                                <span class="video-icon"><i class="fas fa-video"></i></span>
+                                <span class="text">Create Video Overlay</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-xl-4 col-6">
+                        <div class="gallery-item video-item">
+                            <div class="bg-overlay">
+                                <img src="assets/images/thumb/video2.png" alt="thumb">
+                                <a href="#0" class="create-video text-center video-icon style--two" data-bs-toggle="modal" data-bs-target="#videoModal">
+                                    <i class="fas fa-play"></i>
+                                </a>
+                                <!-- Button trigger modal -->
+                                <input type="checkbox" class="position-absolute d-lg-none" style="right: 9px; bottom: 11px" id="check01">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-xl-4 col-6">
+                        <div class="gallery-item video-item">
+                            <div class="bg-overlay">
+                                <img src="assets/images/thumb/video3.png" alt="thumb">
+                                <a href="#0" class="create-video text-center video-icon style--two" data-bs-toggle="modal" data-bs-target="#videoModal">
+                                    <i class="fas fa-play"></i>
+                                </a>
+                                <!-- Button trigger modal -->
+                                <input type="checkbox" class="position-absolute" style="right: 9px; bottom: 11px" id="check01">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-xl-4 col-6">
+                        <div class="gallery-item video-item">
+                            <div class="bg-overlay">
+                                <img src="assets/images/thumb/video4.png" alt="thumb">
+                                <a href="#0" class="create-video text-center video-icon style--two" data-bs-toggle="modal" data-bs-target="#videoModal">
+                                    <i class="fas fa-play"></i>
+                                </a>
+                                <!-- Button trigger modal -->
+                                <input type="checkbox" class="position-absolute d-lg-none" style="right: 9px; bottom: 11px" id="check01">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-xl-4 col-6">
+                        <div class="gallery-item video-item">
+                            <div class="bg-overlay">
+                                <img src="assets/images/thumb/video5.png" alt="thumb">
+                                <a href="#0" class="create-video text-center video-icon style--two" data-bs-toggle="modal" data-bs-target="#videoModal">
+                                    <i class="fas fa-play"></i>
+                                </a>
+                                <!-- Button trigger modal -->
+                                <input type="checkbox" class="position-absolute d-lg-none" style="right: 9px; bottom: 11px" id="check01">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+@@include('../partial-html/_modals.html')
+
+
+@@include('../partial-html/_footer.html')
+@@include('../partial-html/_template-bottom.html')
+</body>
+
+</html>
